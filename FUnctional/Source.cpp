@@ -41,19 +41,24 @@ int main()
 {
     
     list<int> mylist = Singleton(232);
+    cout << "Singleton result:\n";
     for (auto v : mylist)
         cout << v << "\n";
     cout << "\n\n";
+    cout << "null result on {232}:\n";
     cout << null(mylist) << "\n\n";
     mylist.pop_back();
+    cout << "null result on {}:\n";
     cout << null(mylist) << "\n\n";
 
     mylist = snoc(mylist, 1);
     mylist = snoc(mylist, 2);
     mylist = snoc(mylist, 3);
+    cout << "snoc result:\n";
     for (auto v : mylist)
         cout << v << "\n";
     cout << "\n\n";
+    cout << "lenght result on {1,2,3}:\n";
     cout << length(mylist) << "\n\n";
     return 0;
 
